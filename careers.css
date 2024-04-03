@@ -1,0 +1,441 @@
+
+        body {
+            font-family: "Fira Sans Condensed", sans-serif;
+            margin: 0;
+            color: #3B3936;
+        }
+
+        nav {
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 999;
+            height: 100px;
+        }
+
+        .logo {
+            width: 200px;
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li {
+            color: black;
+            text-decoration: none;
+            transition: all ease 0.3s;
+        }
+
+        nav ul li:hover {
+            color: orangered;
+            text-decoration: dashed;
+            border-bottom: 2px solid orange;
+        }
+
+        nav ul li a button {
+            color: red;
+            font-weight: 700;
+            background-color: white;
+            transition: all ease-in-out 0.3s;
+            padding: 8px 16px;
+            border: 1px solid red;
+        }
+
+        nav ul li a button:hover {
+            color: white;
+            background-color: red;
+            border-color: transparent;
+        }
+
+        /* Dropdown Styles */
+        .dropdown-menu {
+            /* padding-top: 40px transparent; */
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            min-width: 160px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            z-index: 10;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .dropdown-menu li {
+            display: block;
+            padding: 8px 16px;
+            color: black;
+            text-decoration: none;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .dropdown-menu li:hover {
+            /* background-color: white; */
+            border-bottom: 0px solid transparent;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .active {
+            color: orangered;
+            text-decoration: dashed;
+            border-bottom: 2px solid orange;
+        }
+
+        /* sub-dropdown */
+
+        .sub-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 90%;
+            width: 200px;
+            min-width: 160px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            z-index: 10;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-dropdown-menu li {
+            display: block;
+            padding: 8px 16px;
+            color: black;
+            text-decoration: none;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-dropdown-menu li:hover {
+            border-bottom: 0px solid transparent;
+        }
+
+        .sub-dropdown:hover .sub-dropdown-menu {
+            display: block;
+        }
+        
+        .product-drop {
+            background-color: #EFEFEF;
+        }
+
+        .product-drop-img {
+            background-image: url('https://www.parallelwireless.com/wp-content/uploads/megamenu-1.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .product-drop-img a i {
+            font-weight: 900;
+        }
+
+        .drop-list li {
+            color: black;
+            font-weight: 400;
+        }
+
+        .drop-list li:hover {
+            color: orange;
+        }
+
+        .dropdown-mega-menu {
+            /* padding-top: 40px transparent; */
+            display: none;
+            position: absolute;
+            top: 150%;
+            left: -375%;
+            width: 94.5em;
+            min-width: 160px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            z-index: 10;
+            transition: all ease-in-out 0.7s;
+        }
+
+        .dropdown-mega-menu li {
+            display: block;
+            padding: 8px 16px;
+            color: black;
+            text-decoration: none;
+            transition: all ease-in-out 0.7s;
+        }
+
+        .dropdown-mega-menu li:hover {
+            /* background-color: white; */
+            border-bottom: 0px solid transparent;
+        }
+
+        .dropdown-mega:hover .dropdown-mega-menu {
+            display: block;
+        }
+
+        .active {
+            color: orangered;
+            text-decoration: dashed;
+            border-bottom: 2px solid orange;
+        }
+
+        .sub-drop-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            min-width: 160px;
+            background-color: #f0f0f0;
+            /* border: 1px solid #ccc; */
+            font-weight: 400;
+            z-index: 10;
+
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-drop-menu li {
+            display: block;
+            padding: 8px 16px;
+            color: black;
+            text-decoration: none;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-drop-menu li:hover {
+            /* background-color: white; */
+            border-bottom: 0px solid transparent;
+        }
+
+        .sub-drop:hover .sub-drop-menu {
+            display: block;
+        }
+        .container {
+                display: flex;
+                justify-content: space-between; /* Space between the left and right content */
+                align-items: center; /* Center vertically */
+                max-width: 90%; /* Set maximum width */
+                
+                padding: 20px; /* Add padding for spacing */
+                margin-bottom: 0%;
+            }
+        .left-content {
+                text-align: center; /* Center align text */
+                flex: 1; /* Take up remaining space */
+                padding-right: 20px; /* Add spacing between left and right content */
+                padding-left: 60px;
+            }
+            .left-content a {
+                color: orangered;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .right-content {
+                flex: 1; /* Take up remaining space */
+                text-align: center; /* Center align content */
+                padding-right: 80px;
+            }
+            
+            .right-content img {
+                width:660px; /* Ensure image stays within container */
+                height: 400px;
+                padding-left: 60px;
+            }
+            
+            h2 {
+                font-size: 100px;
+                color:black#333; /* Text color */
+                font-weight: bold;
+            }
+            
+            p {
+                font-size: 20px;
+                color: #171414; /* Text color */
+                line-height: 1.6; /* Adjust line height for better readability */
+                text-align: justify;
+              
+            }
+            
+            
+            .right-content1 img {
+                width:660px; /* Ensure image stays within container */
+                height: 400px;
+                padding-left: 60px;
+            }
+
+        .containeru2 {
+                background-color: #ccc; /* Gray background color */
+                text-align: center; /* Center-align content */
+                padding: 20px; /* Add padding */
+                margin-top: 100px;
+                
+                
+            }
+            
+            .containeru2 p {
+                font-size: 10px;
+                color: #333; /* Text color */
+                margin-bottom: 10px; /* Add some space below the text */
+                margin-left: 100px;
+                margin-right: 100px;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+}
+.button {
+  background-color:orangered; 
+  color:white; 
+  border: 2px black;
+  
+}
+
+             
+.horizontal-line{
+    width:500;
+    background-color:orangered ;
+
+}
+.container {
+                display: flex;
+                justify-content: space-between; /* Space between the left and right content */
+                align-items: center; /* Center vertically */
+                max-width: 90%; /* Set maximum width */
+                
+                padding: 20px; /* Add padding for spacing */
+                margin-bottom: 0%;
+            }
+.below {
+                text-align: center; /* Center align text */
+                flex: 1; /* Take up remaining space */
+                padding-right: 0px; /* Add spacing between left and right content */
+                padding-left: 10px;
+                text-align: justify;
+            }
+            .below a {
+                
+                font-size: 30px;
+                font-weight: 700;
+                text-align: justify;
+            }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+              }
+              
+              /* Clear floats after image containers */
+              .row::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

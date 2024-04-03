@@ -1,0 +1,547 @@
+body {
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin: 0;
+    color: #3B3936;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li {
+    color: black;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+nav ul li:hover {
+    color: orangered;
+    text-decoration: dashed;
+    border-bottom: 2px solid orange;
+}
+
+nav ul li a button {
+    color: red;
+    font-weight: 700;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+    padding: 8px 16px;
+    border: 1px solid red;
+}
+
+nav ul li a button:hover {
+    color: white;
+    background-color: red;
+    border-color: transparent;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    /* padding-top: 40px transparent; */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    min-width: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 10;
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu li {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu li:hover {
+    /* background-color: white; */
+    border-bottom: 0px solid transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.active {
+    color: orangered;
+    text-decoration: dashed;
+    border-bottom: 2px solid orange;
+}
+
+/* sub-dropdown */
+
+.sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    width: 200px;
+    min-width: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 10;
+    transition: all ease-in-out 0.3s;
+}
+
+.sub-dropdown-menu li {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.sub-dropdown-menu li:hover {
+    border-bottom: 0px solid transparent;
+}
+
+.sub-dropdown:hover .sub-dropdown-menu {
+    display: block;
+}
+
+.product-drop {
+    background-color: #EFEFEF;
+}
+
+.product-drop-img {
+    background-image: url('https://www.parallelwireless.com/wp-content/uploads/megamenu-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-drop-img a i {
+    font-weight: 900;
+}
+
+.drop-list li {
+    color: black;
+    font-weight: 400;
+}
+
+.drop-list li:hover {
+    color: orange;
+}
+
+.dropdown-mega-menu {
+    /* padding-top: 40px transparent; */
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: -375%;
+    width: 94.5em;
+    min-width: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 10;
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-mega-menu li {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-mega-menu li:hover {
+    /* background-color: white; */
+    border-bottom: 0px solid transparent;
+}
+
+.dropdown-mega:hover .dropdown-mega-menu {
+    display: block;
+}
+
+.active {
+    color: orangered;
+    text-decoration: dashed;
+    border-bottom: 2px solid orange;
+}
+
+.sub-drop-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    min-width: 160px;
+    background-color: #f0f0f0;
+    /* border: 1px solid #ccc; */
+    font-weight: 400;
+    z-index: 10;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li:hover {
+    /* background-color: white; */
+    border-bottom: 0px solid transparent;
+}
+
+.sub-drop:hover .sub-drop-menu {
+    display: block;
+}
+.hero {
+    padding-top: 34%;
+    /* margin-top: 50px; */
+    /* padding-bottom: 100%; */
+    /* margin-top: 24em; */
+    background-image: url('https://www.parallelwireless.com/wp-content/uploads/technologies-hero.jpg');
+    background-size: cover;
+    background-position: center top 100px;
+    /* background-attachment: fixed; */
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    z-index: 0;
+    /* Fixed background */
+}
+
+.solution-content {
+    background-color: #f0f0f0;
+    opacity: 0.6;
+}
+
+.hero-nav {
+    background-color: #EFEFEF;
+}
+
+.active-hero {
+    background-color: orangered !important;
+    color: white !important;
+}
+
+.features {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #3B3936;
+}
+
+.features ul li strong {
+    font-weight: 800;
+    color: black;
+}
+
+.features ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* display: flex; */
+
+}
+
+.features ul li::before {
+    list-style: circle;
+}
+
+
+
+/* Search button styles */
+.search-contact .search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Contact button styles */
+.contact-btn {
+    border: 2px solid orangered; 
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right:50px;
+}
+
+.contact-btn:hover {
+    background-color: darkorange;
+}
+
+/* Search button styles */
+.search-contact .search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Contact button styles */
+.contact-btn {
+    border: 2px solid orangered; 
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right:50px;
+}
+
+.contact-btn:hover {
+    background-color: darkorange;
+}
+
+.slider{
+    height: 700px;
+}
+
+.img1{
+    position: absolute;
+}
+
+.content{
+    position: relative;
+    color: white;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.overview, .leadership, .products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 2%;
+}
+
+.img-container{
+    height: 300px;
+    overflow: hidden;
+  }
+  
+.img-container img {
+    transition: transform .5s ease;
+  }
+  
+.img-container:hover img {
+    transform: scale(1.5);
+    opacity: 0.4;
+    background: #ff5100;
+  }
+
+.p1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.p2{
+    font-size: 22px;
+}
+
+.p3{
+    color: #ff5100;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.p4{
+    font-size: 20px;
+}
+
+.about, .awards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 4%;
+    gap: 50px;
+}
+
+.card{
+    padding: 2%;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 4%;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.link1:hover{
+    color: #ff5100;
+}
+
+.icons{
+    color: #ff5100;
+}
+
+.slider1{
+    padding: 2%;
+    background-color: lightgray;
+    width: 2200px;
+}
+
+.img-list{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 4%;
+}
+
+.img-item{
+    width: 100px;
+    height: 50px;
+}
+.translate-btn {
+    position: fixed;
+    top: 98%;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 9999; /* Ensure the button is on top of other elements */
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.translate-btn:hover {
+    background-color: #0056b3;
+}
+.dropdown-container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+/* Adjust styles for the green box */
+.column:last-child {
+    background-color: green;
+    color: white;
+}
+.dropdown-arrow {
+    margin-left: 5px; /* Adjust the distance between text and arrow */
+}
+
+/* Rotate arrow to point downwards */
+.dropdown-menu[aria-labelledby="productsDropdown"] .dropdown-arrow {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow to point upwards when dropdown menu is open */
+.dropdown-menu[aria-labelledby="productsDropdown"].show .dropdown-arrow {
+    transform: rotate(-90deg);
+}
+.container1{
+    align-items: center;
+}
+.carousel-inner img{
+    width: 1500px;
+    height: 600px;
+    
+}
+
+
+
+.containerr1 {
+    background-color: #ccc; /* Gray background color */
+    width: 100%;
+    height: 400px;
+    margin: 0%;
+    padding: 0%;
+}
+.text {
+    font-size: 48px;
+    font-family: Arial, sans-serif; /* Change this to your desired font */
+    color: #000; /* Change this to your desired text color */
+    background-color: #eaeaea; /* Adjust the last value (0.5) to change the transparency */
+    padding: 20px;
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    background-color: rgb(156, 156, 156);
+   
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none; /* Remove underline for links */
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 0px; /* Reduce margin between buttons */
+    font-weight: bold;
+}
+
+.btn:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+.btn:hover {
+    background-color: orangeRED;
+    color: white;
+}
+
+
+
+
+
